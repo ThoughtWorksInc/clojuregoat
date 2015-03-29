@@ -2,8 +2,5 @@
   (:use [ring.util.response :only [redirect]]
         [goat.util.templates :only [render-with-header-and-footer]]))
 
-(defn- create-session []
-  "results")
-
 (defn home [request]
   (render-with-header-and-footer "home"))
