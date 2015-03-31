@@ -1,6 +1,6 @@
 (defproject ask "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "a goat, in Clojure"
+  :url "https://github.com/ThoughtWorksInc/clojuregoat"
   :min-lein-version "2.0.0"
   :main main
   :dependencies [[org.clojure/clojure "1.6.0"]
