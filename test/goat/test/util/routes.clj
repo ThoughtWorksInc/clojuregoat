@@ -1,4 +1,4 @@
-(ns web.test.util.routes
+(ns goat.test.util.routes
   (:use midje.sweet)
   (:require [goat.app :refer :all]
             [ring.mock.request :as mock]))
@@ -8,7 +8,7 @@
     (let [response (-> (mock/request :get "/")
                        app)]
          (:status response) => 200
-         (:body response)   => (contains "Hello World!")))
+         (:body response)   => (contains "Content")))
 
   (fact "it shows not found when the page does not exist"
     (let [response (-> (mock/request :get "/invalid")
