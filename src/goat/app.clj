@@ -3,9 +3,12 @@
             [compojure.handler :as handler]
             [compojure.route :as route]
             [goat.controllers.home :as home]
+            [goat.controllers.xss :as xss]
             [goat.controllers.error :as error]))
 
 (defroutes router
+  (GET "/search" [request] (xss/search request))
+  (POST "/search" [query] (xss/postsearch query))
   (GET "/" [request] (home/home request))
   (route/resources "/")
   (route/not-found (error/not-found)))

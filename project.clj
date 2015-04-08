@@ -4,7 +4,7 @@
   :min-lein-version "2.0.0"
   :main main
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [compojure "1.1.9"]
+                 [compojure "1.3.3"]
                  [http-kit "2.1.5"]
                  [de.ubercode.clostache/clostache "1.4.0"]]
   :profiles {:dev
