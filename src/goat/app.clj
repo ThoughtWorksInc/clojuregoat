@@ -8,7 +8,7 @@
 
 (defroutes router
   (GET "/search" [request] (xss/search request))
-  (POST "/search" [request] (xss/postsearch request))
+  (POST "/search" [query] (xss/postsearch query))
   (GET "/" [request] (home/home request))
   (route/resources "/")
   (route/not-found (error/not-found)))
