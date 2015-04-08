@@ -4,3 +4,7 @@
 
 (defn search [request]
   (render-with-header-and-footer "search"))
+
+(defn postsearch [request]
+  (render-with-header-and-footer "search"))
+
