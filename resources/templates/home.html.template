@@ -1,5 +1,8 @@
 {{> header}}
   <div class="container">
-    <h1>Content</h1>
+    <h1>Welcome</h1>
+    <hr/>
+    <ul>
+      <li><a href="/search">Search</a></li>
   </div>
 {{> footer}}
