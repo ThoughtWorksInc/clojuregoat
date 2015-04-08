@@ -6,5 +6,5 @@
   (render-with-header-and-footer "search"))
 
 (defn postsearch [request]
-  (render-with-header-and-footer "search"))
+  (render-with-header-and-footer "search",  {:results true}))
 

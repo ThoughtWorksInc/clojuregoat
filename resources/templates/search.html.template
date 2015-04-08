@@ -10,6 +10,11 @@
         <input name='submit' type='submit' value='Search'>
     </form>
 
+    {{#results}}
+    <hr>
+    Your search for "" returned no results.
+    {{/results}}
+
   </div>
 
 {{> footer}}

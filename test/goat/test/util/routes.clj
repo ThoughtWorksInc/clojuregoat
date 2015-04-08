@@ -18,7 +18,13 @@
 
   (fact "it shows the search page ok"
     (let [response (-> (mock/request :get "/search")
-                   app)]
+                       app)]
           (:status response) => 200
-          (:body response)   => (contains "This facility will search the WebGoat source"))))
+          (:body response)   => (contains "This facility will search the WebGoat source")))
+
+  (fact "you can post to the search page and get the query back"
+    (let [response (-> (mock/request :post "/search")
+                     app)]
+      (:status response) => 200
+      (:body response)   => (contains "returned no results"))))
 
