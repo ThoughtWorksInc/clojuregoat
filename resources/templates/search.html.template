@@ -1,0 +1,15 @@
+{{> header}}
+  <div class="container">
+    <h1>ClojureGoat Search</h1>
+    <p>This facility will search the WebGoat source.</p>
+    <hr/>
+
+    <form accept-charset='unknown' method='post' name='form' action='search' enctype=''>
+        <b>Search:</b>
+        <input name='SearchQuery' type='text' value=''>
+        <input name='submit' type='submit' value='Search'>
+    </form>
+
+  </div>
+
+{{> footer}}
