@@ -20,7 +20,7 @@
     (let [response (-> (mock/request :get "/search")
                        app)]
           (:status response) => 200
-          (:body response)   => (contains "This facility will search the WebGoat source")))
+          (:body response)   => (contains "This facility will search the ")))
 
   (fact "you can post blank to the search page and get the extra section at the bottom"
     (let [response (-> (mock/request :post "/search")
