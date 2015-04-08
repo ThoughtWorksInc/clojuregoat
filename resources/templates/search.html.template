@@ -12,7 +12,7 @@
 
     {{#results}}
     <hr>
-    Your search for "{{ query }}" returned no results.
+    Your search for "{{{ query }}}" returned no results.
     {{/results}}
 
   </div>

@@ -32,5 +32,12 @@
     (let [response (-> (mock/request :post "/search",  {:query "verbatim safe query"})
                      app)]
       (:status response) => 200
-      (:body response)   => (contains "verbatim safe query"))))
+      (:body response)   => (contains "verbatim safe query")))
+
+  (fact "it will verbatim back terribly unsafe stuff"
+    (let [response (-> (mock/request :post "/search",  {:query "<script>alert('I am an alert box!');</script>"})
+                     app)]
+      (:status response) => 200
+      (:body response)   => (contains "<script>alert('I am an alert box!');</script>"))))
+
 
