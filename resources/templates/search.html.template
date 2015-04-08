@@ -6,13 +6,13 @@
 
     <form accept-charset='unknown' method='post' name='form' action='search' enctype=''>
         <b>Search:</b>
-        <input name='SearchQuery' type='text' value=''>
+        <input name='query' type='text' value=''>
         <input name='submit' type='submit' value='Search'>
     </form>
 
     {{#results}}
     <hr>
-    Your search for "" returned no results.
+    Your search for "{{ query }}" returned no results.
     {{/results}}
 
   </div>

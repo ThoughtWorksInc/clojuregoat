@@ -6,5 +6,7 @@
   (render-with-header-and-footer "search"))
 
 (defn postsearch [request]
-  (render-with-header-and-footer "search",  {:results true}))
+  (let [query (get-in request [:params :query])]
+    (render-with-header-and-footer "search",  {:results true :query query})))
+
 

@@ -22,9 +22,15 @@
           (:status response) => 200
           (:body response)   => (contains "This facility will search the WebGoat source")))
 
-  (fact "you can post to the search page and get the query back"
+  (fact "you can post blank to the search page and get the extra section at the bottom"
     (let [response (-> (mock/request :post "/search")
                      app)]
       (:status response) => 200
-      (:body response)   => (contains "returned no results"))))
+      (:body response)   => (contains "returned no results")))
+
+  (fact "you can post to the search page and get the query back in the response"
+    (let [response (-> (mock/request :post "/search",  {:query "verbatim safe query"})
+                     app)]
+      (:status response) => 200
+      (:body response)   => (contains "verbatim safe query"))))
 
