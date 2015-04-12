@@ -1,0 +1,8 @@
+{{> header}}
+<div class="container">
+  <p>A bug in Clostache means that, when a variable is inserted in a HTML
+     attribute surrounded by single quotes, input can escape the attribute and
+     execute XSS.</p>
+  <p>Welcome, <a href='/user/{{ username }}'>{{ username }}</a></p>
+</div>
+{{> footer}}

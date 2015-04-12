@@ -4,5 +4,7 @@
     <hr/>
     <ul>
       <li><a href="/search">Search</a></li>
+      <li><a href="/cls">Clostache Bug</a></li>
+    </ul>
   </div>
 {{> footer}}
