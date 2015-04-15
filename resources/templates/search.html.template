@@ -2,7 +2,7 @@
 <p>This facility will search the long term memory of the javascript community.</p>
 <hr/>
 
-<form accept-charset='unknown' method='post' name='form' action='search' enctype=''>
+<form accept-charset='unknown' method='post' name='form' action='a3' enctype=''>
     <b>Search:</b>
     <input name='query' type='text' value=''>
     <input name='submit' type='submit' value='Search'>
