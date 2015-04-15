@@ -1,10 +1,15 @@
 {{> header}}
   <div class="container">
-    <h1>Welcome</h1>
-    <hr/>
-    <ul>
-      <li><a href="/search">Search</a></li>
-      <li><a href="/cls">Clostache Bug</a></li>
-    </ul>
+    <div class="row">
+      <nav class="three columns">
+         <ul>
+           <li><a href="/search">Search</a></li>
+           <li><a href="/cls">Clostache Bug</a></li>
+         </ul>
+      </nav>
+      <div id="main" class="nine columns">
+        <h2>Welcome</h2>
+      </div>
+    </div>
   </div>
 {{> footer}}

@@ -7,36 +7,32 @@ html, body {
 
 header {
     background: #005ea5;
-    border-bottom: 8px solid #dee0e2;
     color: #ffffff;
-    font-size: 1.8em;
-    font-weight: 700;
     margin-bottom: 10px;
     overflow: hidden;
     padding: 8px 0;
 }
-
-header a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-header a:hover {
-    color: #ffffff;
-}
+  header a {
+      color: #ffffff;
+      text-decoration: none;
+  }
+    header a:hover {
+        color: #40c9e8;
+    }
 
 h1 {
-    font-family: "Open Sans", Arial, sans-serif;
-    font-weight: 300;
     margin-bottom: 2px;
 }
+  h1 a {
+      text-decoration: none;
+  }
 
-h1 a {
-    text-decoration: none;
+nav ul {
+    margin: 0;
 }
-
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-}
+  nav ul li {
+      list-style: none;
+  }
+  nav ul li a {
+      display: block;
+  }

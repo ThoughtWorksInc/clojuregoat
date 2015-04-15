@@ -2,7 +2,11 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Title</title>
+
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="/vendor/skeleton/css/normalize.css"/>
   <link rel="stylesheet" type="text/css" href="/vendor/skeleton/css/skeleton.css"/>
   <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -10,7 +14,7 @@
 <body>
   <header>
     <div class="container">
-      <h1>ClojureGoat</h1>
+      <h1><a href="/">ClojureGoat</a></h1>
     </div>
   </header>
 
