@@ -1,3 +1,42 @@
+html, body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #005ea5;
+    border-bottom: 8px solid #dee0e2;
+    color: #ffffff;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+h1 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+
 .container {
     max-width: 800px;
+    margin: 0 auto;
 }
