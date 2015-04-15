@@ -1,14 +1,17 @@
-<h2>ClojureGoat Search</h2>
-<p>This facility will search the long term memory of the javascript community.</p>
-<hr/>
+<h2>Cross-site Scripting</h2>
 
-<form accept-charset='unknown' method='post' name='form' action='a3' enctype=''>
-    <b>Search:</b>
-    <input name='query' type='text' value=''>
-    <input name='submit' type='submit' value='Search'>
-</form>
+<div class="target">
+    <h3>Search</h3>
+    <p>This facility will search the long term memory of the javascript community.</p>
+    <hr/>
+    <form accept-charset='unknown' method='post' name='form' action='a3' enctype=''>
+        <label for="query">Search:</label>
+        <input id="query" name='query' type='text' value=''>
+        <input name='submit' type='submit' value='Search'>
+    </form>
 
-{{#results}}
-<hr/>
-Your search for "{{{ query }}}" returned no results.
-{{/results}}
+    {{#results}}
+    <hr/>
+    Your search for "{{{ query }}}" returned no results.
+    {{/results}}
+</div>

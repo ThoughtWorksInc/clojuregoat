@@ -38,3 +38,8 @@ nav ul {
       display: block;
       text-decoration: none;
   }
+
+.target {
+    border: 3px solid #999999;
+    padding: 20px;
+}
