@@ -29,8 +29,8 @@
   ([name]
     (render-with-header-and-footer name {}))
   ([name parameters]
-    (render name
-            parameters
-            [:header :footer])))
-
-
+    (clostache/render (read-template "page")
+                      parameters
+                      {:header (read-template "header")
+                       :footer (read-template "footer")
+                       :content (read-template name)})))

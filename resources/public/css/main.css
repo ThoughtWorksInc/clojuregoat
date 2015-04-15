@@ -34,5 +34,7 @@ nav ul {
       list-style: none;
   }
   nav ul li a {
+      border-bottom: 1px dotted #999999;
       display: block;
+      text-decoration: none;
   }

@@ -7,10 +7,10 @@
             [goat.controllers.error :as error]))
 
 (defroutes router
-  (GET  "/"           []         (home/home))
-  (GET  "/search"     []         (xss/search))
-  (POST "/search"     [query]    (xss/postsearch query))
-  (GET  "/dependency" [username] (xss/dependency username))
+  (GET  "/"   []         (home/home))
+  (GET  "/a3" []         (xss/search))
+  (POST "/a3" [query]    (xss/postsearch query))
+  (GET  "/a9" [username] (xss/dependency username))
   (route/resources "/")
   (route/not-found (error/not-found)))
 
