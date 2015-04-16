@@ -1,5 +1,5 @@
 html, body {
-    color: #0B0C0C;
+    color: #0b0c0c;
     font-family: Arial, sans-serif;
     height: 100%;
     margin: 0;
@@ -14,7 +14,8 @@ a {
   }
 
 header {
-    background: #005ea5;
+    background: #0b0c0c;
+    border-bottom: 10px solid #dee0e2;
     color: #ffffff;
     margin-bottom: 10px;
     overflow: hidden;
@@ -47,7 +48,30 @@ nav ul {
       text-decoration: none;
   }
 
+.big {
+    font-size: 1.8em;
+}
+
+blockquote {
+    margin-left: 0;
+    padding-left: 20px;
+    border-left: 8px solid #dee0e2;
+}
+
+.container {
+  max-width: 860px;
+}
+
+.center {
+    text-align: center;
+}
+
 .target {
-    border: 3px solid #999999;
+    border: 3px solid #dee0e2;
     padding: 20px;
+}
+
+.search-logo {
+    font-size: 6em;
+    font-family: "Times New Roman", serif;
 }

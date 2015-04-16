@@ -1,12 +1,16 @@
-<h2>Cross-site Scripting</h2>
-
-<div class="target">
-    <h3>Search</h3>
-    <p>This facility will search the long term memory of the javascript
-       community.</p>
+<h1>Cross-site Scripting</h1>
+<blockquote>
+    Cross-Site Scripting (XSS) attacks are a type of injection, in which
+    malicious scripts are injected into otherwise benign and trusted web sites.
+    XSS attacks occur when an attacker uses a web application to send malicious
+    code, generally in the form of a browser side script, to a different end
+    user.
+</blockquote>
+<div class="target center">
+    <h3 class="search-logo">Search</h3>
+    <p>Search the long term memory of the javascript community.</p>
     <hr/>
     <form accept-charset='unknown' method='post' name='form' action='a3' enctype=''>
-        <label for="query">Search:</label>
         <input id="query" name='query' type='text' value=''>
         <input name='submit' type='submit' value='Search'>
     </form>

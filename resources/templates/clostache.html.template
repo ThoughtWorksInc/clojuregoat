@@ -1,4 +1,4 @@
-<h2>Using Components with Known Vulnerabilities</h2>
+<h1>Using Components with Known Vulnerabilities</h1>
 <p>A bug in Clostache means that, when a variable is inserted in a HTML
    attribute surrounded by single quotes, input can escape the attribute and
    execute XSS.</p>

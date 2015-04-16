@@ -20,7 +20,7 @@
     (let [response (-> (mock/request :get "/a3")
                        app)]
          (:status response) => 200
-         (:body response)   => (contains "This facility will search the ")))
+         (:body response)   => (contains "Search")))
 
   (fact "you can post blank to the search page and get the extra section at the bottom"
     (let [response (-> (mock/request :post "/a3")
