@@ -2,7 +2,8 @@
 
 <div class="target">
     <h3>Search</h3>
-    <p>This facility will search the long term memory of the javascript community.</p>
+    <p>This facility will search the long term memory of the javascript
+       community.</p>
     <hr/>
     <form accept-charset='unknown' method='post' name='form' action='a3' enctype=''>
         <label for="query">Search:</label>
