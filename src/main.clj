@@ -1,6 +1,7 @@
 (ns main
   (:use [goat.app :only [app]]
-        [org.httpkit.server :only [run-server]]))
+        [org.httpkit.server :only [run-server]])
+  (:gen-class))
 
 (defonce server (atom nil))
 
