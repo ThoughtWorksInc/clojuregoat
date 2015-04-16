@@ -1,4 +1,4 @@
-<h1>Cross-site Scripting</h1>
+<h1><span class="owasp-code">A3</span> Cross-site Scripting</h1>
 <blockquote>
     Cross-Site Scripting (XSS) attacks are a type of injection, in which
     malicious scripts are injected into otherwise benign and trusted web sites.

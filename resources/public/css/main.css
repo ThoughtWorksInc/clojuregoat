@@ -71,6 +71,14 @@ blockquote {
     padding: 20px;
 }
 
+.owasp-code {
+    font-size: 0.8em;
+    border-bottom: 3px solid #bfc1c3;
+    border-radius: 5px;
+    padding: 5px 8px;
+    background: #dee0e2;
+}
+
 .search-logo {
     font-size: 6em;
     font-family: "Times New Roman", serif;
