@@ -1,7 +1,28 @@
-<h1>Using Components with Known Vulnerabilities</h1>
-<p>A bug in Clostache means that, when a variable is inserted in a HTML
-   attribute surrounded by single quotes, input can escape the attribute and
-   execute XSS.</p>
-<div class="target">
-  <p>Welcome, <a href='/user/{{ username }}'>{{ username }}</a></p>
+<h1>
+    <span class="owasp-code">A9</span>
+    Using Components with Known Vulnerabilities
+</h1>
+<blockquote>
+    This is similar to the cross-site scripting exercise, except this is a
+    little more tricky. The hint is in the title.
+</blockquote>
+<div class="target center">
+    {{^registered}}
+    <form accept-charset='unknown' method='post' name='form' action='a9' enctype=''>
+        <div class="row">
+            <label for="username">Username</label>
+            <input id="username" name='username' type='text' value=''>
+        </div>
+        <div class="row">
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" value=""/>
+        </div>
+        <div class="row">
+            <input name='submit' type='submit' value='Register'>
+        </div>
+    </form>
+    {{/registered}}
+    {{#registered}}
+        <p>Welcome, <a href='/user/{{ username }}'><b>{{ username }}</b></a></p>
+    {{/registered}}
 </div>
