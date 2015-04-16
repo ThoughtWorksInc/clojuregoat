@@ -3,8 +3,8 @@
     <div class="row">
       <nav class="three columns">
          <ul>
-           <li><a href="/a3">A3 Cross-site Scripting (XSS)</a></li>
-           <li><a href="/a9">A9 Using Components with Known Vulnerabilities</a></li>
+           <li><a href="/a3">Cross-site Scripting (XSS)</a></li>
+           <li><a href="/a9">Using Components with Known Vulnerabilities</a></li>
          </ul>
       </nav>
       <div id="main" class="nine columns">

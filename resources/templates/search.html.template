@@ -1,10 +1,19 @@
-<h1><span class="owasp-code">A3</span> Cross-site Scripting</h1>
-<blockquote>
+<h1>
+    <span class="owasp-code">A3</span>
+    Cross-site Scripting
+</h1>
+<p>
     Cross-Site Scripting (XSS) attacks are a type of injection, in which
     malicious scripts are injected into otherwise benign and trusted web sites.
     XSS attacks occur when an attacker uses a web application to send malicious
     code, generally in the form of a browser side script, to a different end
     user.
+</p>
+
+<blockquote>
+    Try to get the the app below execute some JavaScript. The source code can
+    be found at <code>resources/templates/search.html.template</code> and
+    <code>goat/util/templates.clj</code>.
 </blockquote>
 <div class="target center">
     <h3 class="search-logo">Search</h3>
