@@ -45,6 +45,12 @@
                                 app)]
                (:status response) => 200
                (:body response) => (contains "Unvalidated Redirects")
-               (:body response) => (contains "<a href=\"redirector/?redirectTo=redirect-target\">Redirect Me</a>"))))
+               (:body response) => (contains "<a href=\"a10-redirector?redirectTo=redirect-target\">Redirect Me</a>")))
+
+       (fact "redirector page redirects user to url in query param"
+             (let [response (-> (mock/request :get "/a10-redirector?redirectTo=redirect-target")
+                                app)]
+               (:status response) => 302
+               (-> response :headers (get "Location")) => "redirect-target")))
 
 

@@ -4,3 +4,6 @@
 
 (defn explanation []
   (render-with-header-and-footer "unvalidated-redirects"))
+
+(defn redirector [redirect-url]
+  (redirect redirect-url))

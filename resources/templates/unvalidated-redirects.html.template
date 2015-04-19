@@ -6,5 +6,5 @@
     Attacker links to unvalidated redirect and tricks victims into clicking it. Victims are more likely to click on it, since the link is to a valid site. Attacker targets unsafe forward to bypass security checks.
 </blockquote>
 <div class="target center">
-    <a href="redirector/?redirectTo=redirect-target">Redirect Me</a>
+    <a href="a10-redirector?redirectTo=redirect-target">Redirect Me</a>
 </div>
