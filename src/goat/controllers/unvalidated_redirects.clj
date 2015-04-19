@@ -7,3 +7,6 @@
 
 (defn redirector [redirect-url]
   (redirect redirect-url))
+
+(defn redirect-target []
+  (render-with-header-and-footer "redirect-target"))

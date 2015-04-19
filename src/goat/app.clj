@@ -16,6 +16,7 @@
            (POST "/a9" [username] (deps/register-account username))
            (GET "/a10" [] (unvalidated-redirects/explanation))
            (GET "/a10-redirector" [redirectTo] (unvalidated-redirects/redirector redirectTo))
+           (GET "/a10-redirect-target" [] (unvalidated-redirects/redirect-target))
            (route/resources "/")
            (route/not-found (error/not-found)))
 
