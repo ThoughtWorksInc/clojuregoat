@@ -7,4 +7,4 @@ Getting started:
 - Run Tests: 
     lein test
 - Run webapp: 
-   lein run
+   lein midje
