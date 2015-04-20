@@ -1,0 +1,7 @@
+<h1>
+    <span class="owasp-code">A10</span>
+    Redirect Target
+</h1>
+<blockquote>
+    You've been redirected to this page, but was it in a secure manner?
+</blockquote>
