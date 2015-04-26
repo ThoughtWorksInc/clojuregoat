@@ -3,15 +3,15 @@
             [monger.core :as mg]
             [monger.collection :as mc]))
 
+(defn- create-connected-db []
+  (let [conn (mg/connect)]
+    (mg/get-db conn "clojuregoat")))
+
 (defn- find-all-locations []
-  (let [conn (mg/connect)
-        db (mg/get-db conn "clojuregoat")]
-    (mc/find-maps db "weather_locations")))
+  (-> (create-connected-db) (mc/find-maps "weather_locations")))
 
 (defn- find-location-by-id [location-id]
-  (let [conn (mg/connect)
-        db (mg/get-db conn "clojuregoat")]
-    (mc/find-one-as-map db "weather_locations" {:id location-id})))
+  (-> (create-connected-db) (mc/find-maps "weather_locations" {:id location-id})))
 
 (defn weather [selected-location-id]
   (let [all-locations (find-all-locations)
