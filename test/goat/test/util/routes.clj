@@ -57,6 +57,12 @@
              (let [response (-> (mock/request :get "/a10-redirect-target")
                                 app)]
                (:status response) => 200
-               (:body response) => (contains "Redirect Target"))))
+               (:body response) => (contains "Redirect Target")))
+
+       (fact "it shows the sql injection page ok"
+             (let [response (-> (mock/request :get "/a1") app)]
+               (:status response) => 200
+               (:body response) => (contains "SQL Injection")))
+       )
 
 
