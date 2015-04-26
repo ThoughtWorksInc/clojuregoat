@@ -8,9 +8,16 @@
 </blockquote>
 <div class="target center">
     <h3>Select location</h3>
-    <select name="location">
-        {{#locations}}
-            <option value="{{id}}">{{name}}</option>
-        {{/locations}}
-    </select>
+    <form>
+        <select name="location">
+            {{#locations}}
+                <option value="{{id}}">{{name}}</option>
+            {{/locations}}
+        </select>
+        <input type="submit" value="Submit"/>
+    </form>
+
+    {{#selected-location}}
+        The weather in {{name}} is {{weather}}
+    {{/selected-location}}
 </div>

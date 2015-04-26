@@ -11,7 +11,7 @@
 
 (defroutes router
            (GET "/" [] (home/home))
-           (GET "/a1" [] (sql-injection/weather))
+           (GET "/a1" [location] (sql-injection/weather location))
            (GET "/a3" [] (xss/search))
            (POST "/a3" [query] (xss/postsearch query))
            (GET "/a9" [] (deps/registration))
