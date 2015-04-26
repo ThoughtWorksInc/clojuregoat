@@ -28,9 +28,9 @@
 (defn render-with-header-and-footer
   ([name]
     (render-with-header-and-footer name {}))
-  ([name parameters]
+  ([name data]
     (clostache/render (read-template "page")
-                      parameters
+                      data
                       {:header (read-template "header")
                        :footer (read-template "footer")
                        :content (read-template name)})))

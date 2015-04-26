@@ -62,7 +62,6 @@
        (fact "it shows the sql injection page ok"
              (let [response (-> (mock/request :get "/a1") app)]
                (:status response) => 200
-               (:body response) => (contains "SQL Injection")))
-       )
+               (:body response) => (contains "SQL Injection"))))
 
 

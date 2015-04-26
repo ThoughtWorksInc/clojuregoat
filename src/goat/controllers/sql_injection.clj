@@ -1,5 +1,13 @@
 (ns goat.controllers.sql-injection
-  (:use [goat.util.templates :only [render-with-header-and-footer]]))
+  (:require [goat.util.templates :refer [render-with-header-and-footer]]
+            [monger.core :as mg]
+            [monger.collection :as mc]))
+
+(defn- find-all-locations []
+  (let [conn (mg/connect)
+        db   (mg/get-db conn "clojuregoat")]
+    (mc/find-maps db "weather_locations")))
 
 (defn weather []
-  (render-with-header-and-footer "sql-injection"))
+  (let [locations (find-all-locations)]
+  (render-with-header-and-footer "sql-injection" {:locations locations})))

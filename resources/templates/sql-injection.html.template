@@ -7,7 +7,7 @@
     Despite these risks, an incredible number of systems on the internet are susceptible to this form of attack.
 </blockquote>
 <div class="target center">
-    <h3>Select location<h3>
+    <h3>Select location</h3>
     <select name="location">
         {{#locations}}
             <option value="{{id}}">{{name}}</option>
