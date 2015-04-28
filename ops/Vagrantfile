@@ -1,0 +1,26 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.box = "ubuntu/trusty64"
+
+  config.vm.network "forwarded_port", guest: 80, host: 8090, id: "web"
+  config.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh", auto_correct: false
+
+  config.vm.synced_folder "../", "/var/clojuregoat"
+
+  config.vm.provider :virtualbox do |vbox|
+    vbox.name = "clojuregoat"
+    vbox.customize ["modifyvm", :id, "--memory", 2048]
+  end
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.limit = "development"
+    ansible.playbook = "development_playbook.yml"
+    ansible.inventory_path = "development.inventory"
+    ansible.sudo = true
+  end
+end

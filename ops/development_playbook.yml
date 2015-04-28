@@ -1,0 +1,7 @@
+---
+ - hosts: development
+   roles:
+    - common
+    - leiningen
+    - bennojoy.mongo_mongod
+
