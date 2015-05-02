@@ -4,5 +4,5 @@
     - common
     - leiningen
     - bennojoy.mongo_mongod
-    - {role: mongo-weather-data, tags:  ['data']}
+    - {role: mongo-data, tags:  ['data']}
 

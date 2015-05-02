@@ -7,13 +7,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.network "forwarded_port", guest: 80, host: 8090, id: "web"
+  config.vm.define "clojuregoat" do |cg|
+  end
+
+  config.vm.network "forwarded_port", guest: 8090, host: 8090, id: "web"
   config.vm.network "forwarded_port", guest: 22, host: 2222, id: "ssh", auto_correct: false
 
   config.vm.synced_folder "../", "/var/clojuregoat"
-
-  config.vm.define "clojuregoat" do |cg|
-  end
 
   config.vm.provider :virtualbox do |vbox|
     vbox.customize ["modifyvm", :id, "--memory", 2048]
