@@ -12,8 +12,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.synced_folder "../", "/var/clojuregoat"
 
+  config.vm.define "clojuregoat" do |cg|
+  end
+
   config.vm.provider :virtualbox do |vbox|
-    vbox.name = "clojuregoat"
     vbox.customize ["modifyvm", :id, "--memory", 2048]
   end
 
@@ -23,4 +25,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.inventory_path = "development.inventory"
     ansible.sudo = true
   end
+
 end

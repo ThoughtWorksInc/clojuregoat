@@ -1,1 +1,0 @@
-{"virtualbox":{"/var/clojuregoat":{"guestpath":"/var/clojuregoat","hostpath":"/Users/rweston/git/clojuregoat","disabled":false},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/rweston/git/clojuregoat/ops","disabled":false}}}

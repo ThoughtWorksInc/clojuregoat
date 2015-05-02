@@ -1,0 +1,6 @@
+[
+  {"id": "lon", "name": "London", "weather": "Rainy and wet"},
+  {"id": "gla", "name": "Glasgow", "weather": "Horizontal hail"},
+  {"id": "par","name": "Paris","weather": "Lovely and sunny"},
+  {"id": "mad", "name": "Madrid", "weather": "Glorius!"}
+]
