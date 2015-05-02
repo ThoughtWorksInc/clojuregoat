@@ -1,0 +1,6 @@
+---
+  - name: copy mongo weather JSON file
+    copy: src=weather_locations.json dest=/tmp/weather_locations.json
+
+  - name: import weather collection data from JSON
+    shell:  mongoimport --db clojuregoat --collection weather_locations --drop --type json --jsonArray --file /tmp/weather_locations.json

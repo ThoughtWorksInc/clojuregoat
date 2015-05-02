@@ -6,10 +6,12 @@
             [goat.controllers.xss :as xss]
             [goat.controllers.dependencies :as deps]
             [goat.controllers.error :as error]
-            [goat.controllers.unvalidated-redirects :as unvalidated-redirects]))
+            [goat.controllers.unvalidated-redirects :as unvalidated-redirects]
+            [goat.controllers.sql-injection :as sql-injection]))
 
 (defroutes router
            (GET "/" [] (home/home))
+           (GET "/a1" [location] (sql-injection/weather location))
            (GET "/a3" [] (xss/search))
            (POST "/a3" [query] (xss/postsearch query))
            (GET "/a9" [] (deps/registration))

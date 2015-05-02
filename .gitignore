@@ -8,3 +8,5 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 .idea
+.vagrant
+ops/roles/bennojoy.mongo_mongod/files/secret

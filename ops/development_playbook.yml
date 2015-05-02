@@ -1,0 +1,8 @@
+---
+ - hosts: development
+   roles:
+    - common
+    - leiningen
+    - bennojoy.mongo_mongod
+    - {role: mongo-data, tags:  ['data']}
+

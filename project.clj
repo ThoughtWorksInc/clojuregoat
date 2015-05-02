@@ -6,7 +6,8 @@
                            [org.clojure/clojure "1.6.0"]
                            [compojure "1.3.3"]
                            [http-kit "2.1.5"]
-                           [de.ubercode.clostache/clostache "1.4.0"]]
+                           [de.ubercode.clostache/clostache "1.4.0"]
+                           [com.novemberain/monger "2.0.0"]]
             :main main
             :aot :all
             :uberjar-name "clojuregoat.jar"

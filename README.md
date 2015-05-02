@@ -2,9 +2,11 @@ Clojuregoat! [![Build Status](https://travis-ci.org/ThoughtWorksInc/clojuregoat.
 ------------
 
 Getting started:
+- cd clojuregoat/ops
+- vagrant up
+- vagrant ssh
+- cd /var/clojuregoat
+- lein run
 
-- Install Leiningen
-- Run Tests: 
-    lein test
-- Run webapp: 
-   lein midje
+To run tests:
+- lein midje
