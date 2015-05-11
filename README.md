@@ -4,7 +4,7 @@ Clojuregoat! [![Build Status](https://travis-ci.org/ThoughtWorksInc/clojuregoat.
 Getting started:
 
 - Install Leiningen
-- Run Tests: 
+- Run Tests:
     lein test
-- Run webapp: 
-   lein midje
+- Run webapp:
+   lein run
